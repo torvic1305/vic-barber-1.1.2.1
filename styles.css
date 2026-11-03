@@ -1,0 +1,17 @@
+:root{--p:#c8973a;--bg:#faf8f5;--card:#fff;--tx:#1d1b18;--mu:#6b655c;--bd:#e5dfd5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17150f;--card:#221f18;--tx:#f3efe8;--mu:#a39b8d;--bd:#3a352b}}
+:root[data-theme="dark"]{--bg:#17150f;--card:#221f18;--tx:#f3efe8;--mu:#a39b8d;--bd:#3a352b}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,sans-serif;background:var(--bg);color:var(--tx)}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:var(--p);color:#fff;flex-wrap:wrap;gap:8px}
+header h1{margin:0;font-size:1.2rem}nav,.tabs{display:flex;gap:6px;flex-wrap:wrap}
+button,.btn{background:var(--card);color:var(--tx);border:1px solid var(--bd);padding:8px 14px;border-radius:8px;cursor:pointer;font-size:.9rem}
+.btn.p,.tabs button.on{background:var(--p);color:#fff;border-color:var(--p)}.tabs{margin-bottom:14px}
+main{max-width:900px;margin:0 auto;padding:18px}.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:16px;margin-bottom:14px}
+h2{margin:0 0 10px;font-size:1.15rem}label{display:block;font-size:.85rem;color:var(--mu);margin:10px 0 4px}
+input,select{width:100%;padding:9px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font-size:1rem}
+td input{min-width:70px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}.mu{color:var(--mu);font-size:.9rem}
+.tag{display:inline-block;padding:2px 8px;border-radius:99px;background:var(--p);color:#fff;font-size:.75rem}
+.hero{text-align:center;padding:30px 10px}.hero h2{font-size:1.8rem}.hidden{display:none}
+.scroll{overflow-x:auto}table{width:100%;border-collapse:collapse}td,th{padding:8px;border-bottom:1px solid var(--bd);text-align:left;font-size:.9rem}
+.toast{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));background:var(--p);color:#fff;padding:12px 16px;border-radius:10px;max-width:280px;z-index:9}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:6px 0}
